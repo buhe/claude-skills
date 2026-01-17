@@ -95,17 +95,21 @@ Where:
 - V = fair value per share
 - c = current year free cash flow per share
 - g = growth rate
+- r = discount rate = 10%
 
-Calculate for 4 scenarios (use only one growth rate for the entire period):
-- 0% growth rate
+Calculate for 6 scenarios (use only one growth rate for the entire period, no separate perpetual growth rate):
 - -5% growth rate
+- 0% growth rate
 - 5% growth rate
+- 7% growth rate
+- 9% growth rate
 - Your estimated growth rate
 
 For each scenario, show:
-- Assumptions (c, g, r)
-- Calculation result
+- Assumptions (c = FCF per share, g = growth rate, r = 10%)
+- Calculation: V = c * (1 + g) / (10% - g)
 - Fair value per share
+- Current stock price comparison (over/under-valued)
 
 ## Data Quality and Source Validation
 
@@ -159,6 +163,6 @@ See: [references/full-methodology.md](references/full-methodology.md)
 - Growth rates should be calculated year-over-year
 - Justify all assumptions (growth rate, discount rate)
 - Report should be written in Chinese
-- For DCF valuation, use a single growth rate for the entire period with the formula V = c * (1 + g) / (10% - g)
+- For DCF valuation, use a single growth rate for the entire period with the formula V = c * (1 + g) / (10% - g). Calculate 6 scenarios: -5%, 0%, 5%, 7%, 9%, and estimated growth rate.
 - Report should be saved as `{ticker}_investment_report.md` in the current folder
 - If financial data is needed, use stockanalysis skill
