@@ -10,5 +10,11 @@
 
   - Or follow the `agent-browser` project's official installation guide.
 
+  ```bash
+  pip install google-genai
+  ```
+
+  - Image skill need google-genai
+
 - A working shell (macOS, Linux, or Windows WSL) with network access.
 
