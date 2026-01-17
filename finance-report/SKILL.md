@@ -19,7 +19,7 @@ Generate comprehensive financial report analysis from a company's annual report 
    - Balance sheet
    - Cash flow statement
    - Notes to financial statements
-4. **Generate and save analysis report** - Create markdown report content, then use Write tool to save as `{ticker}_financial_analysis.md` in the current working directory
+4. **Generate and save analysis report** - Create markdown report content, then use Write tool to save as `{ticker}_financial_analysis.md` in the current working directory. IMPORTANT: Always use the full absolute path for the file location. Use `pwd` command to get current working directory and construct the absolute path: `{absolute_path}/{ticker}_financial_analysis.md`
 
 ## Report Structure
 
@@ -153,5 +153,5 @@ Table of key financial metrics for the current year:
 - Include specific numbers from the financial statements
 - Note any significant changes year-over-year
 - Report should be written in English
-- Report should be saved as `{ticker}_financial_analysis.md` in the current folder
+- Report should be saved as `{ticker}_financial_analysis.md` in the current folder using the ABSOLUTE path. Always construct full path: `{absolute_working_directory}/{ticker}_financial_analysis.md`
 - Cite the source document for all data points: `[Source: Financial Report Filename]`
