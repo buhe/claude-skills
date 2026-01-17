@@ -66,12 +66,42 @@ Brief overview of the company's financial performance during the reporting perio
 
 ### 6. Balance Sheet Analysis
 
+#### 6.1 Asset Structure Analysis
 - Total assets composition
+- Current assets and non-current assets
+- Major asset items analysis
+
+#### 6.2 Detailed Liabilities Analysis
+
+**Liabilities Composition Table:**
+
+| Liability Item | Amount | % of Total Liabilities | Nature |
+|----------------|--------|-------------------------|--------|
+| Interest-Bearing Debt (Short-term) | | | Interest-Bearing/Short-term |
+| Interest-Bearing Debt (Long-term) | | | Interest-Bearing/Long-term |
+| Non-Interest Bearing Liabilities (Short-term) | | | Non-Interest Bearing/Short-term |
+| Non-Interest Bearing Liabilities (Long-term) | | | Non-Interest Bearing/Long-term |
+| **Total** | | | |
+
+**Interest-Bearing Debt Analysis:**
+- Short-term interest-bearing debt: short-term borrowings, commercial paper, current portion of non-current liabilities (interest-bearing portion), etc.
+- Long-term interest-bearing debt: long-term borrowings, bonds payable, lease liabilities, etc.
+- Total interest-bearing debt and interest rates
+- Maturity structure of interest-bearing debt
+
+**Non-Interest Bearing Liabilities Analysis:**
+- Short-term non-interest bearing liabilities: accounts payable, deferred revenue, other payables, etc.
+- Long-term non-interest bearing liabilities: deferred income, other non-current liabilities, etc.
+- Operating liabilities percentage analysis
+
+#### 6.3 Liquidity and Working Capital
 - Current assets and current liabilities
 - Working capital position
-- Debt analysis (short-term, long-term)
-- Equity structure
-- Key ratios: current ratio, debt-to-equity
+- Current ratio and quick ratio
+
+#### 6.4 Equity Structure
+- Shareholders' equity composition
+- Debt-to-equity ratio analysis
 
 ### 7. Segment and Product Performance
 
@@ -108,7 +138,12 @@ Table of key financial metrics for the current year:
 | Operating Cash Flow | | | |
 | Free Cash Flow | | | |
 | Total Assets | | | |
-| Total Debt | | | |
+| Total Liabilities | | | |
+| Interest-Bearing Debt (Total) | | | |
+| Interest-Bearing Debt (Short-term) | | | |
+| Interest-Bearing Debt (Long-term) | | | |
+| Non-Interest Bearing Liabilities | | | |
+| Debt-to-Equity Ratio | | | |
 | Current Ratio | | | |
 
 ## Important Notes
@@ -117,6 +152,6 @@ Table of key financial metrics for the current year:
 - Focus on factual analysis rather than investment recommendations
 - Include specific numbers from the financial statements
 - Note any significant changes year-over-year
-- Report should be written in Chinese
+- Report should be written in English
 - Report should be saved as `{ticker}_financial_analysis.md` in the current folder
-- Cite the source document for all data points: `[来源: 财报文件名]`
+- Cite the source document for all data points: `[Source: Financial Report Filename]`
