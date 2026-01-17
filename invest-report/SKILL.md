@@ -27,7 +27,7 @@ Generate comprehensive investment research reports from a company's annual repor
    - Major investments in last 10 years
    - Debt and cash balance
 4. **Cross-validate data** - Compare data from reference materials with stockanalysis skill data
-5. **Generate report** - Create markdown file named `{ticker}_investment_report.md` with 8 chapters
+5. **Generate and save report** - Create markdown report content with 8 chapters, then use Write tool to save as `{ticker}_investment_report.md` in the current working directory
 
 ## Report Structure
 

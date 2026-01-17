@@ -19,7 +19,7 @@ Generate comprehensive financial report analysis from a company's annual report 
    - Balance sheet
    - Cash flow statement
    - Notes to financial statements
-4. **Generate analysis report** - Create markdown file named `{ticker}_financial_analysis.md` in current folder
+4. **Generate and save analysis report** - Create markdown report content, then use Write tool to save as `{ticker}_financial_analysis.md` in the current working directory
 
 ## Report Structure
 
