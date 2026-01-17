@@ -26,7 +26,7 @@ Use agent-browser to access macrotrends.net and retrieve company financial data 
 
 2. **Construct the URL** using the appropriate pattern from the table above
 
-3. **Use agent-browser to access the page**:
+3. **Use agent-browser to access the page** (use headed mode for Cloudflare):
    ```bash
    agent-browser open <URL>
    agent-browser snapshot
