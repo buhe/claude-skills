@@ -9,12 +9,15 @@
     ```
 
   - Or follow the `agent-browser` project's official installation guide.
+- Image skill need google-genai
 
   ```bash
   pip install google-genai
   ```
 
-  - Image skill need google-genai
+  ```bash
+  export GEMINI_API_KEY=AI_YOUR_KEY
+  ```
 
 - A working shell (macOS, Linux, or Windows WSL) with network access.
 
