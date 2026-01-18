@@ -46,8 +46,10 @@ You MUST generate the following charts using Python matplotlib. All charts must 
 - Python code template:
 ```python
 import matplotlib.pyplot as plt
-years = ['2015', '2016', '2017', '2018', '2019', '2020', '2021', '2022', '2023', '2024']
-revenue = [list of values]
+# DYNAMIC: years should be extracted from the actual data range available
+# Example: If data covers 2019-2024, use: years = ['2019', '2020', '2021', '2022', '2023', '2024']
+years = [extract years from actual data range]
+revenue = [list of values matching the years]
 fig, ax = plt.subplots(figsize=(12, 6))
 ax.plot(years, revenue, marker='o', linewidth=2.5, markersize=8, color='#1E88E5')
 for i, v in enumerate(revenue):
@@ -86,15 +88,23 @@ plt.close()
 - Style: Colorful pie chart with legend, professional business style
 - Resolution: 300 DPI, Aspect: 1:1
 - Insert in: Chapter 2 (Business Segments) - after business segments table
-- Title: "Business Segments Revenue Breakdown"
+- Title: "Business Segments Revenue Breakdown (Year)"
 - Filename: `business_segments.png`
 - Python code template:
 ```python
 import matplotlib.pyplot as plt
-segments = ['iPhone', 'Services', 'Wearables\nHome & Acc.', 'Mac', 'iPad']
-percentages = [list of percentages]
-colors = ['#1E88E5', '#43A047', '#FF9800', '#7B1FA2', '#E91E63']
-explode = (0.08, 0.03, 0, 0, 0)
+# DYNAMIC: Extract actual business segment names from company's annual report or reference materials
+# Examples: ['Product A', 'Product B', 'Services', 'Other'] or ['North America', 'Europe', 'Asia', 'Other']
+segments = [extract actual segment names from company data]
+percentages = [list of revenue percentages matching segments]
+
+# Color palette - adjust number of colors based on number of segments
+color_palette = ['#1E88E5', '#43A047', '#FF9800', '#7B1FA2', '#E91E63',
+                '#00BCD4', '#FFC107', '#8BC34A', '#9C27B0', '#607D8B']
+colors = color_palette[:len(segments)]
+
+# Explode the largest segment for emphasis, others default to 0
+explode = [0.08 if p == max(percentages) else 0.03 for p in percentages]
 
 fig, ax = plt.subplots(figsize=(10, 8))
 wedges, texts, autotexts = ax.pie(percentages, explode=explode, labels=segments, colors=colors,
@@ -105,7 +115,8 @@ for autotext in autotexts:
     autotext.set_color('white')
     autotext.set_fontsize(12)
     autotext.set_fontweight('bold')
-ax.set_title('Business Segments Revenue Breakdown (2024)', fontsize=14, fontweight='bold', pad=20)
+# DYNAMIC: Use actual most recent year from data
+ax.set_title('Business Segments Revenue Breakdown (YEAR)', fontsize=14, fontweight='bold', pad=20)
 plt.tight_layout()
 plt.savefig('generated_images/business_segments.png', dpi=300, bbox_inches='tight')
 plt.close()
@@ -137,8 +148,10 @@ plt.close()
 - Python code template:
 ```python
 import matplotlib.pyplot as plt
-years = ['2015', '2016', '2017', '2018', '2019', '2020', '2021', '2022', '2023', '2024']
-dividend = [list of values]
+# DYNAMIC: years should be extracted from actual data range available
+# Example: If data covers 2015-2024, use: years = ['2015', '2016', '2017', '2018', '2019', '2020', '2021', '2022', '2023', '2024']
+years = [extract years from actual data range]
+dividend = [list of values matching years]
 fig, ax = plt.subplots(figsize=(12, 6))
 bars = ax.bar(years, dividend, color='#1E88E5', width=0.7)
 for i, v in enumerate(dividend):
@@ -179,9 +192,11 @@ plt.close()
 ```python
 import matplotlib.pyplot as plt
 import numpy as np
-years = ['2020', '2021', '2022', '2023', '2024']
-dividends = [list of values]
-repurchases = [list of values]
+# DYNAMIC: years should be extracted from actual data range available (last 5 years typically)
+# Example: If data covers 2020-2024, use: years = ['2020', '2021', '2022', '2023', '2024']
+years = [extract years from actual data range, typically last 5 years]
+dividends = [list of values matching years]
+repurchases = [list of values matching years]
 
 fig, ax = plt.subplots(figsize=(10, 6))
 bottom = np.zeros(len(years))
@@ -217,6 +232,7 @@ plt.close()
 8. **Insertion**: Insert chart images at specified locations using markdown syntax: `![Chart Title](generated_images/filename.png)`
 9. **Output Directory**: Save all charts to `generated_images/` subdirectory in the current working directory
 10. **Create directory if needed**: Ensure `generated_images/` directory exists before saving charts
+11. **CRITICAL: Dynamic Years**: DO NOT hardcode years! Extract years from the actual data range available in reference materials. For example, if reference data covers 2019-2024, use `years = ['2019', '2020', '2021', '2022', '2023', '2024']`. Match the years list length with the actual data values length.
 
 ## Report Structure
 
