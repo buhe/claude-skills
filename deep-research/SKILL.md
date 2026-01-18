@@ -223,7 +223,6 @@ For the complete specification including:
 - Multi-agent orchestration details
 - Domain-specific overlays (healthcare, financial, legal, market)
 - Advanced methodologies (Chain-of-Density, Chain-of-Verification)
-- 生成的文档使用中文
 
 See: [references/full-methodology.md](references/full-methodology.md)
 

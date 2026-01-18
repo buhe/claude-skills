@@ -24,3 +24,10 @@
 ## invest-report
 
 ![image-20260118102801633](https://raw.githubusercontent.com/buhe/pic/main/uPic/image-20260118102801633.png)
+
+## finance-report
+
+![image-20260118111330738](https://raw.githubusercontent.com/buhe/pic/main/uPic/image-20260118111330738.png)
+
+## deep-research
+
