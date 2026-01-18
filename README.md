@@ -73,3 +73,7 @@ Visit stockanalysis.com to get financial data for up to 5 years.
 ## nano-banana-pro
 
 Use the `nano-banana-pro` model to generate images.
+
+## kweb-pe
+
+Calculate weighted PE ratio for KWEB ETF.
