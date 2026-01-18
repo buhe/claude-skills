@@ -1,15 +1,20 @@
 ## Prerequisites
 
-- Install `agent-browser` and make sure it is available on your PATH. Example install methods (choose the one matching the tool's official instructions):
+- **Financial** skill need `agent-browser` 
 
-  - npm (if the tool is published to npm):
+  - Install `agent-browser` and make sure it is available on your PATH. Example install methods (choose the one matching the tool's official instructions):
 
-    ```bash
-    npm install -g agent-browser
-    ```
+    - npm (if the tool is published to npm):
 
-  - Or follow the `agent-browser` project's official installation guide.
-- Image skill need google-genai
+      ```bash
+      npm install -g agent-browser
+      agent-browser install
+      ```
+    
+    - Or follow the `agent-browser` project's official installation guide.
+
+
+- nano-banana-pro skill need `google-genai`
 
   ```bash
   pip install google-genai
@@ -73,3 +78,7 @@ Nothing needs to be provided.
 ## stockanalysis
 
 Visit stockanalysis.com to get financial data for up to 5 years.
+
+## nano-banana-pro
+
+Use the `nano-banana-pro` model to generate images.
