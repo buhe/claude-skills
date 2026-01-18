@@ -31,6 +31,8 @@
 
 ## deep-research
 
+![image-20260118114950094](https://raw.githubusercontent.com/buhe/pic/main/uPic/image-20260118114950094.png)
+
 
 
 *The generated report can be in various languages; for example, it can be explicitly stated that the generated report will be in English.*
