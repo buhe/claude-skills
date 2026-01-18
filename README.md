@@ -2,7 +2,7 @@
 
 - **Financial** skill need `agent-browser` 
 
-  - Install `agent-browser` and make sure it is available on your PATH. Example install methods (choose the one matching the tool's official instructions):
+  - Install `agent-browser` and make sure it is available on your PATH:
 
     ```bash
     npm install -g agent-browser
