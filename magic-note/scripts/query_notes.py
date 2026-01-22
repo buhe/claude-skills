@@ -30,6 +30,10 @@ def query_notes_by_tag(tag: str, days: int = None) -> list:
     """Query notes by tag."""
     return get_notes_by_tag(tag, days)
 
+def query_notes_all(days: int) -> list:
+    """Query all notes from last N days."""
+    return get_notes_by_days(days)
+
 if __name__ == "__main__":
     import argparse
 
@@ -37,6 +41,7 @@ if __name__ == "__main__":
     parser.add_argument('--review', type=int, help='Query notes needing review from last N days')
     parser.add_argument('--feel', type=str, help='Query by feeling')
     parser.add_argument('--tag', type=str, help='Query by tag')
+    parser.add_argument('--all', type=int, help='Query all notes from last N days')
     parser.add_argument('--days', type=int, help='Filter by last N days')
 
     args = parser.parse_args()
@@ -47,8 +52,10 @@ if __name__ == "__main__":
         results = query_notes_by_feel(args.feel, args.days)
     elif args.tag:
         results = query_notes_by_tag(args.tag, args.days)
+    elif args.all:
+        results = query_notes_all(args.all)
     else:
-        print("Please specify --review, --feel, or --tag")
+        print("Please specify --review, --feel, --tag, or --all")
         sys.exit(1)
 
     print(json.dumps(results, ensure_ascii=False, indent=2))
