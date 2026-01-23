@@ -152,7 +152,7 @@ python3 scripts/save_note.py "note content"
 
 Main entry point for querying notes:
 ```bash
-# Review notes
+# Review notes (notes with @ or $ from past N days)
 python3 scripts/query_notes.py --review 1
 
 # Query by feeling
@@ -160,4 +160,12 @@ python3 scripts/query_notes.py --feel excited --days 1
 
 # Query by tag
 python3 scripts/query_notes.py --tag stock --days 30
+
+# Query ALL notes from past N days
+python3 scripts/query_notes.py --all 30
 ```
+
+**IMPORTANT**: `--all N` means "query all notes from past N days", NOT "query all notes ever".
+- `--all 1` → past 1 day only
+- `--all 30` → past 30 days
+- Do NOT use `--all 1 --days 30` together (the `--all` parameter already specifies the days)
