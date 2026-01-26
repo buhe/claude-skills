@@ -6,7 +6,16 @@
   pip install google-genai
   export GEMINI_API_KEY=AI_YOUR_KEY
   ```
+- blog-deploy
+  ```bash
+  yarn global add vercel@latest
 
+  vercel login --github
+
+  vercel switch
+  vercel project ls
+  
+  ```
 - A working shell (macOS, Linux, or Windows WSL) with network access.
 
 ## nano-banana-pro
