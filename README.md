@@ -6,7 +6,7 @@
   pip install google-genai
   export GEMINI_API_KEY=AI_YOUR_KEY
   ```
-- blog-deploy
+- blog-deploy skill need `vercel` cli
   ```bash
   yarn global add vercel@latest
 
@@ -14,7 +14,7 @@
 
   vercel switch
   vercel project ls
-  
+
   ```
 - A working shell (macOS, Linux, or Windows WSL) with network access.
 
